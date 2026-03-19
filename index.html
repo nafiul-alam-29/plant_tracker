@@ -4,8 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Plant Tracker</title>
+
+    <!-- tailwind css -->
+      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon">
 </head>
 <body>
-    <h1> Hello</h1>
+    <header class="w-11/12 mx-auto space-y-5">
+        <h1 class="text-7xl text-green-500 font-bold"> Plant Tracker</h1>
+        <div class="card-container grid grid-cols-3 gap-5">
+            <div class="bg-amber-300 p-4 rounded-md">
+                <p>Total</p>
+                <p id="total">0</p>
+            </div>
+            <div class="bg-green-300 p-4 rounded-md">
+                <p>Thrive</p>
+                <p id="thrivecount">0</p>
+            </div>
+            <div class="bg-red-300 p-4 rounded-md">
+                <p>Struggling</p>
+                <p id="strugglecount">0</p>
+            </div>
+        </div>
+    </header>
 </body>
 </html>
