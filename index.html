@@ -9,23 +9,189 @@
       <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="shortcut icon" href="icon.png" type="image/x-icon">
 </head>
-<body>
+<body >
     <header class="w-11/12 mx-auto space-y-5">
         <h1 class="text-7xl text-green-500 font-bold"> Plant Tracker</h1>
         <div class="card-container grid grid-cols-3 gap-5">
             <div class="bg-amber-300 p-4 rounded-md">
-                <p>Total</p>
-                <p id="total">0</p>
+                <p class="text-4xl text-white">Total</p>
+                <p class="text-4xl text-white" id="total">0</p>
             </div>
             <div class="bg-green-300 p-4 rounded-md">
-                <p>Thrive</p>
-                <p id="thrivecount">0</p>
+                <p class="text-4xl text-white">Thrive</p>
+                <p class="text-4xl text-white" id="thrivecount">0</p>
             </div>
             <div class="bg-red-300 p-4 rounded-md">
-                <p>Struggling</p>
-                <p id="strugglecount">0</p>
+                <p class="text-4xl text-white">Struggling</p>
+                <p class="text-4xl text-white" id="strugglecount">0</p>
             </div>
         </div>
     </header>
+
+    <hr class="my-5">
+
+    <main class="w-11/12 mx-auto">
+
+        <div class="mb-5">
+            <button class="bg-blue-400 px-4 py-2 rounded-md" id="all-btn"> All</button>
+            <button class="bg-gray-300 px-4 py-2 rounded-md" id="all-thrive"> Thrive</button>
+            <button class="bg-gray-300 px-4 py-2 rounded-md" id="all-struggle"> Struggling</button>
+        </div>
+
+        <section id="cards-container">
+            <!-- card-1 -->
+            <div class="card flex justify-between p-3 border rounded-md mb-4">
+                <div class="space-y-6">
+                    <div>
+                        <p class="plantname text-3xl">Plant Name 1</p>
+                        <p class="latinname">Latin Name</p>
+                    </div>
+
+                    <div class="flex gap-4">
+                        <p class="bright bg-mauve-300 px-2 py-2 rounded-md">Bright Indicate</p>
+                        <p class="water bg-mauve-300 px-2 py-2 rounded-md">Weekly</p>
+                    </div>
+                    <p class="status">no applicable</p>
+                    <p class="notes">New Leap unfuring by the east window</p>
+
+                    <div class="flex gap-5">
+                        <button class="thrive-btn bg-green-200 rounded-md px-4 py-2">Thrive</button>
+                        <button class="struggle-btn bg-rose-300 rounded-md px-4 py-2"> Struggling</button>
+                    </div>
+                </div>
+
+                <div>
+                    <button class="delete-btn bg-red-200 outline-2 outline-pink-500 px-4 py-2 rounded-md ">Delete</button>
+                </div>
+            </div>
+
+            <div class="card flex justify-between p-3 border rounded-md mb-4">
+                <div class="space-y-6">
+                    <div>
+                        <p class="plantname text-3xl">Plant Name 2</p>
+                        <p class="latinname">Latin Name</p>
+                    </div>
+
+                    <div class="flex gap-4">
+                        <p class="bright bg-mauve-300 px-2 py-2 rounded-md">Bright Indicate</p>
+                        <p class="water bg-mauve-300 px-2 py-2 rounded-md">Weekly</p>
+                    </div>
+                    <p class="status">no applicable</p>
+                    <p class="notes">New Leap unfuring by the east window</p>
+
+                    <div class="flex gap-5">
+                        <button class="thrive-btn bg-green-200 rounded-md px-4 py-2">Thrive</button>
+                        <button class="struggle-btn bg-rose-300 rounded-md px-4 py-2"> Struggling</button>
+                    </div>
+                </div>
+
+                <div>
+                    <button class="delete-btn bg-red-200 outline-2 outline-pink-500 px-4 py-2 rounded-md ">Delete</button>
+                </div>
+            </div>
+
+            <div class="card flex justify-between p-3 border rounded-md mb-4">
+                <div class="space-y-6">
+                    <div>
+                        <p class="plantname text-3xl">Plant Name 3</p>
+                        <p class="latinname">Latin Name</p>
+                    </div>
+
+                    <div class="flex gap-4">
+                        <p class="bright bg-mauve-300 px-2 py-2 rounded-md">Bright Indicate</p>
+                        <p class="water bg-mauve-300 px-2 py-2 rounded-md">Weekly</p>
+                    </div>
+                    <p class="status">no applicable</p>
+                    <p class="notes">New Leap unfuring by the east window</p>
+
+                    <div class="flex gap-5">
+                        <button class="thrive-btn bg-green-200 rounded-md px-4 py-2">Thrive</button>
+                        <button class="struggle-btn bg-rose-300 rounded-md px-4 py-2"> Struggling</button>
+                    </div>
+                </div>
+
+                <div>
+                    <button class="delete-btn bg-red-200 outline-2 outline-pink-500 px-4 py-2 rounded-md ">Delete</button>
+                </div>
+            </div>
+
+            <div class="card flex justify-between p-3 border rounded-md mb-4">
+                <div class="space-y-6">
+                    <div>
+                        <p class="plantname text-3xl">Plant Name 4</p>
+                        <p class="latinname">Latin Name</p>
+                    </div>
+
+                    <div class="flex gap-4">
+                        <p class="bright bg-mauve-300 px-2 py-2 rounded-md">Bright Indicate</p>
+                        <p class="water bg-mauve-300 px-2 py-2 rounded-md">Weekly</p>
+                    </div>
+                    <p class="status">no applicable</p>
+                    <p class="notes">New Leap unfuring by the east window</p>
+
+                    <div class="flex gap-5">
+                        <button class="thrive-btn bg-green-200 rounded-md px-4 py-2">Thrive</button>
+                        <button class="struggle-btn bg-rose-300 rounded-md px-4 py-2"> Struggling</button>
+                    </div>
+                </div>
+
+                <div>
+                    <button class="delete-btn bg-red-200 outline-2 outline-pink-500 px-4 py-2 rounded-md ">Delete</button>
+                </div>
+            </div>
+
+            <div class="card flex justify-between p-3 border rounded-md mb-4">
+                <div class="space-y-6">
+                    <div>
+                        <p class="plantname text-3xl">Plant Name 5</p>
+                        <p class="latinname">Latin Name</p>
+                    </div>
+
+                    <div class="flex gap-4">
+                        <p class="bright bg-mauve-300 px-2 py-2 rounded-md">Bright Indicate</p>
+                        <p class="water bg-mauve-300 px-2 py-2 rounded-md">Weekly</p>
+                    </div>
+                    <p class="status">no applicable</p>
+                    <p class="notes">New Leap unfuring by the east window</p>
+
+                    <div class="flex gap-5">
+                        <button class="thrive-btn bg-green-200 rounded-md px-4 py-2">Thrive</button>
+                        <button class="struggle-btn bg-rose-300 rounded-md px-4 py-2"> Struggling</button>
+                    </div>
+                </div>
+
+                <div>
+                    <button class="delete-btn bg-red-200 outline-2 outline-pink-500 px-4 py-2 rounded-md ">Delete</button>
+                </div>
+            </div>
+
+            <div class="card flex justify-between p-3 border rounded-md mb-4">
+                <div class="space-y-6">
+                    <div>
+                        <p class="plantname text-3xl">Plant Name 6</p>
+                        <p class="latinname">Latin Name</p>
+                    </div>
+
+                    <div class="flex gap-4">
+                        <p class="bright bg-mauve-300 px-2 py-2 rounded-md">Bright Indicate</p>
+                        <p class="water bg-mauve-300 px-2 py-2 rounded-md">Weekly</p>
+                    </div>
+                    <p class="status">no applicable</p>
+                    <p class="notes">New Leap unfuring by the east window</p>
+
+                    <div class="flex gap-5">
+                        <button class="thrive-btn bg-green-200 rounded-md px-4 py-2">Thrive</button>
+                        <button class="struggle-btn bg-rose-300 rounded-md px-4 py-2"> Struggling</button>
+                    </div>
+                </div>
+
+                <div>
+                    <button class="delete-btn bg-red-200 outline-2 outline-pink-500 px-4 py-2 rounded-md ">Delete</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <script src="script/script.js"></script>
 </body>
 </html>
